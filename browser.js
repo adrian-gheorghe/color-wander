@@ -41,8 +41,10 @@ var randomize = (ev) => {
 randomize();
 resize();
 
+const initialConfig = createConfig();
+
 window.onload = () => {
-  setInterval(randomize, config.reloadInterval);
+  setInterval(randomize, initialConfig.reloadInterval);
 }
 
 const addEvents = (element) => {

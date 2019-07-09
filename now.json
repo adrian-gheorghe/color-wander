@@ -5,6 +5,23 @@
         { 
             "src": "package.json", 
             "use": "@now/static-build", 
-            "config": { "distDir": "public" } }
+            "config": { 
+                "distDir": "public" 
+            } 
+        },
+        {
+            "src": "maps/**",
+            "use": "@now/static",
+            "config": { 
+                "distDir": "public" 
+            }
+        },
+        {
+            "src": "index.html",
+            "use": "@now/static",
+            "config": {
+                "distDir": "public"
+            }
+        }
     ]
 }
