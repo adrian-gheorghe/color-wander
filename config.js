@@ -39,12 +39,13 @@ module.exports = function (seed) {
     interval: random(0.001, 0.01),
     count: Math.floor(random(50, 2000)),
     steps: Math.floor(random(100, 1000)),
-    endlessBrowser: false, // Whether to endlessly step in browser
+    endlessBrowser: true, // Whether to endlessly step in browser
+    reloadInterval: 60000,
 
     // background image that drives the algorithm
     debugLuma: false,
     backgroundScale: 1,
-    backgorundFille: 'black',
+    backgroundFill: 'black',
     backgroundSrc: mapSrc,
 
     // browser/node options

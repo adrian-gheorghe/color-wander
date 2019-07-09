@@ -41,6 +41,10 @@ var randomize = (ev) => {
 randomize();
 resize();
 
+window.onload = () => {
+  setInterval(randomize, config.reloadInterval);
+}
+
 const addEvents = (element) => {
   element.addEventListener('mousedown', (ev) => {
     if (ev.button === 0) {
