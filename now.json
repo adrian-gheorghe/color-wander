@@ -2,6 +2,9 @@
     "version": 2,
     "name": "color-wanderer",
     "builds": [
-        { "src": "package.json", "use": "@now/static-build", "config": { "distDir": "public" } }
+        { 
+            "src": "package.json", 
+            "use": "@now/static-build", 
+            "config": { "distDir": "public" } }
     ]
 }

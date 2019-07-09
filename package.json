@@ -48,7 +48,7 @@
     "deploy": "surge -p .",
     "start": "budo browser.js:bundle.js --live -- -t babelify",
     "build": "browserify browser.js -t babelify | uglifyjs -m -c warnings=false > bundle.js",
-    "now-build": "browserify browser.js -t babelify > bundle.js"
+    "now-build": "browserify browser.js -t babelify > ./public/bundle.js"
   },
   "keywords": [],
   "repository": {
