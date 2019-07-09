@@ -48,15 +48,15 @@
     "deploy": "surge -p .",
     "start": "budo browser.js:bundle.js --live -- -t babelify",
     "build": "browserify browser.js -t babelify | uglifyjs -m -c warnings=false > bundle.js",
-    "now-build": "browserify browser.js -t babelify | uglifyjs -m -c warnings=false > bundle.js"
+    "now-build": "browserify browser.js -t babelify > bundle.js"
   },
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git://github.com/mattdesl/color-wander.git"
+    "url": "git://github.com/sdgandhi/color-wander.git"
   },
-  "homepage": "https://github.com/mattdesl/color-wander",
+  "homepage": "https://github.com/sdgandhi/color-wander",
   "bugs": {
-    "url": "https://github.com/mattdesl/color-wander/issues"
+    "url": "https://github.com/sdgandhi/color-wander/issues"
   }
 }
